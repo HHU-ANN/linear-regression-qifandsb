@@ -1,0 +1,20 @@
+清华源：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+
+conda config --set show_channel_urls yes #设置搜索时显示通道地址
+
+conda config --remove-key channels #恢复原来的源
+
+conda create -n ID python=version #创建环境
+
+conda activate ID  #进入环境
+
+conda remove --ID --all
+
+conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+
+

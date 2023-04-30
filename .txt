@@ -1,0 +1,14 @@
+chrome:version
+  
+
+regedit     
+计算机\HKEY_CLASSES_ROOT\Directory\shell
+计算机\HKEY_CLASSES_ROOT\Directory\shellex
+
+C:\Program Files (x86)\Microsoft Visual Studio\Installer
+
+堕落人偶：steam://install/1811180
+
+Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko
+
+萌次元18moe.net
