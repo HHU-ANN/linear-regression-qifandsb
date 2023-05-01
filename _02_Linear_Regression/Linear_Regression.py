@@ -13,7 +13,7 @@ def ridge(data):
     # weight = np.linalg.inv(np.matmul(X.T,X)) * np.matmul(X.T, y)
     # return weight @ data
     x, y = read_data()
-    i = np.eye(10)
+    i = np.eye(6)
     w = np.dot((np.linalg.inv(np.dot(x.T, x)) + i), np.dot(x.T, y))
     return w
 
