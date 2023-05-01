@@ -16,7 +16,7 @@ def ridge(data):
     # i = np.eye(6)
     # w = np.dot(np.linalg.inv(np.dot(x.T, x) + i), np.dot(x.T, y))
     # return w
-
+    pass
 def lasso(data):
     x, y = read_data()
     return np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y))
