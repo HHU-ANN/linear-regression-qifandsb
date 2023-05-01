@@ -13,7 +13,8 @@ def ridge(data):
     # weight = np.linalg.inv(np.matmul(X.T,X)) * np.matmul(X.T, y)
     # return weight @ data
     x, y = read_data()
-    w = np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y))
+    i = np.eye(10)
+    w = np.dot((np.linalg.inv(np.dot(x.T, x)) + i), np.dot(x.T, y))
     return w
 
 def lasso(data):
