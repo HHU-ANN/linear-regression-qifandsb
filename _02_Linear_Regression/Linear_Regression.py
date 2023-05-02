@@ -14,7 +14,7 @@ def ridge(data):
     # return weight @ data
     x, y = read_data()
     i = np.eye(6)
-    h = e+07
+    h = 10000000
     print(h)
     w = np.dot(np.linalg.inv(np.dot(x.T, x) + h * i), np.dot(x.T, y))
     m = np.dot(x.T, y) - np.dot(x.T, x)
