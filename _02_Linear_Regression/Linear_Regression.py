@@ -26,7 +26,8 @@ def ridge(data):
 
 def lasso(data):
     x, y = read_data()
-    return np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y))
+    w = np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y))
+    return w @ data
 
 def read_data(path='./data/exp02/'):
     x = np.load(path + 'X_train.npy')
