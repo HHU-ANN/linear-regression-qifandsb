@@ -23,8 +23,7 @@ def lasso(data):
     x, y = read_data()
     i = np.eye(6)
     h = -0.1001
-    #
-    w = np.dot(np.linalg.inv(np.dot(x.T, x)), (np.dot(x.T, y) - h * i))
+    w = np.dot(np.linalg.inv(np.dot(x.T, x)), np.dot(x.T, y) - h * i)
     return w @ data
 
 def read_data(path='./data/exp02/'):
